@@ -17,16 +17,18 @@ function Serverj() {
       });
   }, []);
 
+  
+
   return (
     <div>
-      <h1>Unsplash Photos</h1>
+      <h1>Portfolio Pictures</h1>
       <Card.Group itemsPerRow={3}>
         {photos.map(photo => (
           <Card key={photo.id}>
             <img src={photo.urls.small} alt={photo.alt_description} />
             <List horizontal>
-              <Button primary>Like</Button>
-            <Rating className="rating" icon='heart' defaultRating={0} maxRating={1} size='massive' />
+              <Button compact >Like</Button>
+            <Rating className="rating" icon='heart' defaultRating={0} maxRating={1} size='large' />
             </List>
           </Card>
         ))}
