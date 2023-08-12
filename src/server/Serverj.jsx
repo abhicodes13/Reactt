@@ -21,8 +21,8 @@ function Serverj() {
 
   return (
     <div>
-      <h1>Portfolio Pictures</h1>
-      <Card.Group itemsPerRow={3}>
+      <h1>Using Unsplash API with axios to fetch photos</h1>
+      <Card.Group itemsPerRow={4}>
         {photos.map(photo => (
           <Card key={photo.id}>
             <img src={photo.urls.small} alt={photo.alt_description} />
@@ -34,7 +34,7 @@ function Serverj() {
         ))}
         
       </Card.Group>
-)
+
     </div>
   );
 }
